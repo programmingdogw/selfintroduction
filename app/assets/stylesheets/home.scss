@@ -31,6 +31,15 @@
         transform: translate( -50%) 
       }
     }
+
+    .simplebar{
+      margin: auto;
+      width:90%;
+      background: lightgray;
+      height:1px;
+      margin-top:50px;
+    }
+    
   }
 
   // メイン
@@ -38,6 +47,17 @@
   &__main{
     margin: auto;
     background-color: red;
+    .contentswrapper{
+      @media screen and (min-width: 481px){ 
+        display:flex;
+      }
+
+      @media screen and (max-width: 480px){ 
+        width:100%;
+      }
+
+    }
+
   }
 
 
