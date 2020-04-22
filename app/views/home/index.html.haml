@@ -1,6 +1,17 @@
-%h1 トップページ
-%p ポートフォリオサイト
 
--# =link_to "Your Life", "https://afternoon-scrubland-33526.herokuapp.com/", class: ""
-=link_to "チーム開発フリマアプリ", "http://18.180.118.52", class: ""
-=link_to image_tag('noimage.png', alt: "ロゴ画像", class:"logolink__image"), root_path, class: "logolink"
+.pagecontainer
+  
+  
+  = render "header" 
+
+
+  .pagecontainer__main
+    %p ポートフォリオサイト
+
+    -# =link_to "Your Life", "https://afternoon-scrubland-33526.herokuapp.com/", class: ""
+    =link_to "チーム開発フリマアプリ", "http://18.180.118.52", class: ""
+    =link_to image_tag('noimage.png', alt: "画像", class:"", size:"100x100"), root_path, class: ""
+
+
+
+  = render "footer"
