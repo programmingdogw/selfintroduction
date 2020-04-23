@@ -4,6 +4,8 @@
 
   // ヘッダー
   &__header{
+    background-image: url(mountain2.jpeg);
+    background-size: cover;
     .smallmenudiv{
       text-align: right;
       margin-right: 50px;
@@ -46,14 +48,24 @@
 
   &__main{
     margin: auto;
-    background-color: red;
     .contentswrapper{
       @media screen and (min-width: 481px){ 
         display:flex;
+        justify-content: space-around;
+        width: 100%;        
+        .content{
+          width: 33%;
+          text-align: center;
+          margin:15px;
+        }
       }
 
       @media screen and (max-width: 480px){ 
         width:100%;
+        .content{
+          width: 100%;
+          text-align: center;
+        }
       }
 
     }
@@ -67,7 +79,17 @@
 
   // フッター
   &__footer{
-    background-color: blue;
+    .simplebar{
+      margin: auto;
+      width:90%;
+      background: lightgray;
+      height:1px;
+      margin-top:50px;
+    }
+
+    .footercontens{
+      text-align: center;
+    }
   }
 
 
