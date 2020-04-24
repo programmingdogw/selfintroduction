@@ -1,24 +1,3 @@
-# README
+# 就職活動のためのポートフォリオサイトです
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![portfoliopicture](https://user-images.githubusercontent.com/59106983/80195615-158c1480-8657-11ea-96b3-455c5d3758b2.jpg)
