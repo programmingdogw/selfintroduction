@@ -4,7 +4,7 @@
 
   // ヘッダー
   &__header{
-    background-image: image_url("mountain2.jpeg");
+    background-image: image_url("tile.jpeg");
     background-size: cover;
     .smallmenudiv{
       text-align: right;
@@ -22,13 +22,23 @@
         margin-right: -50%;
         transform: translate( -50%) 
       }
-      .miniimagelogo{
+      .miniimagelogofirst{
         width: 150px;
         height: 50px;
         margin: 0;
         position: absolute;
         top: 90%;
-        left: 50%;
+        left: 43%;
+        margin-right: -50%;
+        transform: translate( -50%) 
+      }
+      .miniimagelogosecond{
+        width: 150px;
+        height: 50px;
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        left: 55%;
         margin-right: -50%;
         transform: translate( -50%) 
       }
@@ -96,6 +106,8 @@
 
   // フッター
   &__footer{
+    background-image: image_url("tile.jpeg");
+    background-size: cover;
     .simplebar{
       margin: auto;
       width:90%;
