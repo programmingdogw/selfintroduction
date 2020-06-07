@@ -33,6 +33,7 @@
       .content
         =link_to image_tag('portfoliopictureyourlife.jpg', alt: "画像", class:"", size:"300x200"),  "https://afternoon-scrubland-33526.herokuapp.com/", class: ""
         %p 初めての個人アプリYourLife
+        %p.textp 挙動確認はできますが,S3設定をしていないのでdyno再起動毎に画像は消えます。詳しくはRead.meをご覧ください。
         =link_to "デプロイ先(heroku)", "https://afternoon-scrubland-33526.herokuapp.com/"
         %br
         =link_to "githubのurl", "https://github.com/programmingdogw/6myapp"
@@ -44,8 +45,7 @@
       .content
         =link_to image_tag('portfoliopicturechatspace.png', alt: "画像", class:"", size:"300x200"), root_path, class: ""
         %p chatspace(カリキュラムにて作成)
-        %br 一度AWSにデプロイしましたが、ElasticIP
-        %br 解放したので現在デプロイはしていません
+        %p.textp 一度AWSにデプロイしましたが、ElasticIP解放したので現在デプロイはしていません
         =link_to "githubのurl", "https://github.com/programmingdogw/chat-space"
 
       .content
