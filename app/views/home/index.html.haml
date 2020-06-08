@@ -10,6 +10,14 @@
     .contentswrapper
 
       .content
+        =link_to image_tag('phpapp.png', alt: "画像", class:"", size:"300x200"),  "https://intense-mesa-88579.herokuapp.com/", class: ""
+        %p phpとlaravelを初めて使って作成中（リクエスト済みのする挙動がおかしいので改修必須）
+        %br
+        =link_to "FreeMenta", "https://intense-mesa-88579.herokuapp.com/"
+       
+
+
+      .content
         =link_to image_tag('5portfolioapp.png', alt: "画像", class:"", size:"300x200"), "http://18.180.245.39/", class: ""
         %p 個人アプリ。無在庫王 MUZAIKO
         =link_to "デプロイ先（AWS）", "http://18.180.245.39/"
@@ -29,15 +37,7 @@
         %br
         =link_to "githubのurl(フォーク後)", "https://github.com/programmingdogw/freemarket_sample_66d"
 
-
-      .content
-        =link_to image_tag('portfoliopictureyourlife.jpg', alt: "画像", class:"", size:"300x200"),  "https://afternoon-scrubland-33526.herokuapp.com/", class: ""
-        %p 初めての個人アプリYourLife
-        %p.textp 挙動確認はできますが,S3設定をしていないのでdyno再起動毎に画像は消えます。詳しくはRead.meをご覧ください。
-        =link_to "デプロイ先(heroku)", "https://afternoon-scrubland-33526.herokuapp.com/"
-        %br
-        =link_to "githubのurl", "https://github.com/programmingdogw/6myapp"
-
+      
       
         
     .contentswrapper
@@ -54,13 +54,14 @@
         %br こちらはデプロイはしておりません
         =link_to "githubのurl", "https://github.com/programmingdogw/pictweet"
 
+
       .content
-        =link_to image_tag('portfoliopicture.jpg', alt: "画像", class:"", size:"300x200"),  "https://sleepy-falls-90070.herokuapp.com/", class: ""
-        %p 当サイト
+        =link_to image_tag('portfoliopictureyourlife.jpg', alt: "画像", class:"", size:"300x200"),  "https://afternoon-scrubland-33526.herokuapp.com/", class: ""
+        %p 初めての個人アプリYourLife
+        %p.textp 挙動確認はできますが,S3設定をしていないのでdyno再起動毎に画像は消えます。詳しくはRead.meをご覧ください。
+        =link_to "デプロイ先(heroku)", "https://afternoon-scrubland-33526.herokuapp.com/"
         %br
-        =link_to "見栄えのために入れてます", "https://sleepy-falls-90070.herokuapp.com/"
-        %br
-        =link_to "githubのurl", "https://github.com/programmingdogw/selfintroduction"
+        =link_to "githubのurl", "https://github.com/programmingdogw/6myapp"
 
     .additionalcontents
       .simplebar
@@ -68,7 +69,7 @@
         = image_tag('career.png')
         - text = "渡辺公平34歳\n早稲田大学国際教養学部中退後、１０年近く塾講師を続けるも一念発起してエンジニアとして転職することを決意。\n半年ほどプログラミングスクールTech :: Expertに通い2020年５月２３日に修了。現在就職活動中。\n現在はphpとlaravelでのアプリ作りに挑戦し、dockerを使ってデプロイしたいと思っている。"
         = simple_format text
-        =link_to 'シンプルなマッチングアプリを作成中', 'https://intense-mesa-88579.herokuapp.com/'
+       
         %br
         %br
         = image_tag('selfintrologo.png')
