@@ -59,11 +59,16 @@
 
       .content
         =link_to image_tag('portfoliopictureyourlife.jpg', alt: "画像", class:"imagelink", size:"300x200"),  "https://afternoon-scrubland-33526.herokuapp.com/", class: "", target: "_blank"
-        %p 初めての個人アプリYourLife
-        %p.textp 挙動確認はできますが,S3設定をしていないのでdyno再起動毎に画像は消えます。詳しくはRead.meをご覧ください。
-        =link_to "デプロイ先(heroku)", "https://afternoon-scrubland-33526.herokuapp.com/", target: "_blank"
-        %br
-        =link_to "githubのurl", "https://github.com/programmingdogw/6myapp", target: "_blank"
+        %ul.menu
+          %li.menu__item
+            %a.menu__item__link.js-menu__item__link{:href => ""} Your Life 詳細
+            %ul.submenu
+              %li.submenu__item
+                %a{:href => "https://afternoon-scrubland-33526.herokuapp.com/", :target => "blank", :class => "linkdecoration"} デプロイ先（heroku）のリンク
+              %li.submenu__item
+                %a{:href => "https://github.com/programmingdogw/6myapp", :class => "linkdecoration"} githubレポジトリのリンク
+              %li.submenu__item
+                %a{:href => "", :class => "linkdecoration"} <span>補足情報 <br><br>挙動確認はできますが,S3設定をしていないのでdyno再起動毎に画像は消えます。詳しくはRead.meをご覧ください。プログラミングを勉強し始めてから二ヶ月経ったくらいに、とにかく色々と試しながら初めてアプリらしき物を作りました。色々と読めたものではないと思いますが、一応思い出に上げておきます。<br></span>
 
     .additionalcontents
       .simplebar
@@ -79,7 +84,8 @@
         = simple_format text
         %br
 
-        %p.jq jQuery稼働テスト(未稼働)
+        
+        
         -# %br
         -# = image_tag('theothers.png')
         -# -# %p はてなブログやteratrailsのurlを載せておきます。主にはてなブログを後で見返すために自分用メモとして使っているだけです。

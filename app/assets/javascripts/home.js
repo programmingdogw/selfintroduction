@@ -1,3 +1,8 @@
-$(document).ready(function() {
-  $("p.jq").text("jQuery稼働テスト(稼働中)");
+$(document).on('turbolinks:load', ()=> {
+  $('.js-menu__item__link').each(function(){
+      $(this).on('click',function(){
+          $("+.submenu",this).slideToggle();
+          return false;
+      });
+  });
 });
