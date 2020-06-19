@@ -46,15 +46,29 @@
 
       .content
         =link_to image_tag('portfoliopicturechatspace.png', alt: "画像", class:"imagelink", size:"300x200"), "https://github.com/programmingdogw/chat-space", class: "", target: "_blank"
-        %p chatspace(カリキュラムにて作成)
-        %p.textp 一度AWSにデプロイしましたが、ElasticIP解放したので現在デプロイはしていません
-        =link_to "githubのurl", "https://github.com/programmingdogw/chat-space", target: "_blank"
+        %ul.menu
+          %li.menu__item
+            %a.menu__item__link.js-menu__item__link{:href => ""} Pictweet 詳細
+            %ul.submenu
+              %li.submenu__item
+                %a{:href => "", :target => "blank", :class => "linkdecoration"} 現在デプロイはしておりません
+              %li.submenu__item
+                %a{:href => "https://github.com/programmingdogw/pictweet", :class => "linkdecoration", target: "_blank"} githubレポジトリのリンク
+              %li.submenu__item
+                %a{:href => "", :class => "linkdecoration"} <span>補足情報 <br><br>カリキュラムにて作成したものです。一度AWSにデプロイしましたが、現在はしておりません（料金発生を防ぐためElasticIPを開放）。<br></span>
 
       .content
         =link_to image_tag('portfoliopicturepictweet.jpg', alt: "画像", class:"imagelink", size:"300x200"), "https://github.com/programmingdogw/pictweet", class: "", target: "_blank"
-        %p pictweet(カリキュラムにて作成) 
-        %br こちらはデプロイはしておりません
-        =link_to "githubのurl", "https://github.com/programmingdogw/pictweet", target: "_blank"
+        %ul.menu
+          %li.menu__item
+            %a.menu__item__link.js-menu__item__link{:href => ""} Pictweet 詳細
+            %ul.submenu
+              %li.submenu__item
+                %a{:href => "", :target => "blank", :class => "linkdecoration"} 現在デプロイはしておりません
+              %li.submenu__item
+                %a{:href => "https://github.com/programmingdogw/pictweet", :class => "linkdecoration", target: "_blank"} githubレポジトリのリンク
+              %li.submenu__item
+                %a{:href => "", :class => "linkdecoration"} <span>補足情報 <br><br>カリキュラムにて作成したものです<br></span>
 
 
       .content
@@ -66,7 +80,7 @@
               %li.submenu__item
                 %a{:href => "https://afternoon-scrubland-33526.herokuapp.com/", :target => "blank", :class => "linkdecoration"} デプロイ先（heroku）のリンク
               %li.submenu__item
-                %a{:href => "https://github.com/programmingdogw/6myapp", :class => "linkdecoration"} githubレポジトリのリンク
+                %a{:href => "https://github.com/programmingdogw/6myapp", :class => "linkdecoration", target: "_blank"} githubレポジトリのリンク
               %li.submenu__item
                 %a{:href => "", :class => "linkdecoration"} <span>補足情報 <br><br>挙動確認はできますが,S3設定をしていないのでdyno再起動毎に画像は消えます。詳しくはRead.meをご覧ください。プログラミングを勉強し始めてから二ヶ月経ったくらいに、とにかく色々と試しながら初めてアプリらしき物を作りました。色々と読めたものではないと思いますが、一応思い出に上げておきます。<br></span>
 
