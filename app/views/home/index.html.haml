@@ -18,7 +18,7 @@
             %a.menu__item__link.js-menu__item__link{:href => ""} FreeMenta 詳細
             %ul.submenu
               %li.submenu__item
-                %a{:href => "https://intense-mesa-88579.herokuapp.com/", :target => "blank", :class => "linkdecoration"} デプロイ先(現在はheroku)のリンク
+                %a{:href => "https://intense-mesa-88579.herokuapp.com/", :target => "blank", :class => "linkdecoration"} デプロイ先(heroku)のリンク
               %li.submenu__item
                 %a{:href => "https://github.com/programmingdogw/practice_app", :class => "linkdecoration", target: "_blank"} githubレポジトリのリンク
               %li.submenu__item
@@ -26,11 +26,17 @@
        
       .content
         =link_to image_tag('5portfolioapp.png', alt: "画像", class:"imagelink", size:"300x200"), "http://18.180.245.39/", class: "", target: "_blank"
-        %p 個人アプリ。無在庫王 MUZAIKO
-        =link_to "デプロイ先（AWS）", "http://18.180.245.39/", target: "_blank"
-        %br
-        =link_to "githubのurl", "https://github.com/programmingdogw/5portfolioapp", target: "_blank"
-
+        %ul.menu
+          %li.menu__item
+            %a.menu__item__link.js-menu__item__link{:href => ""} 無在庫王 詳細
+            %ul.submenu
+              %li.submenu__item
+                %a{:href => "http://18.180.245.39/", :target => "blank", :class => "linkdecoration"} デプロイ先（AWS）のリンク
+              %li.submenu__item
+                %a{:href => "https://github.com/programmingdogw/5portfolioapp", :class => "linkdecoration", target: "_blank"} githubレポジトリのリンク
+              %li.submenu__item
+                %a{:href => "", :class => "linkdecoration"} <span>補足情報 <br><br>商品の出品・編集・削除・購入ができます。<br></span>
+    
       .content
         =link_to image_tag('portfoliopicturefurima.jpg', alt: "画像", class:"imagelink", size:"300x200"), "http://18.180.118.52", class: "", target: "_blank"
         %p チーム開発フリマアプリ
