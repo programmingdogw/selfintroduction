@@ -39,16 +39,26 @@
     
       .content
         =link_to image_tag('portfoliopicturefurima.jpg', alt: "画像", class:"imagelink", size:"300x200"), "http://18.180.118.52", class: "", target: "_blank"
-        %p チーム開発フリマアプリ
-        =link_to "デプロイ先(AWS)", "http://18.180.118.52", target: "_blank"
-        %br
-        ユーザー名: admin
-        %br
-        パスワード: 2222
-        %br
-        =link_to "githubのurl(フォーク前)", "https://github.com/irohaas/freemarket_sample_66d", target: "_blank"
-        %br
-        =link_to "githubのurl(フォーク後)", "https://github.com/programmingdogw/freemarket_sample_66d", target: "_blank"
+        %ul.menu
+          %li.menu__item
+            %a.menu__item__link.js-menu__item__link{:href => ""} チーム開発フリマアプリ 詳細
+            %ul.submenu
+              %li.submenu__item
+                %a{:href => "http://18.180.118.52", :target => "blank", :class => "linkdecoration"} デプロイ先（AWS）のリンク
+              %li.submenu__item
+                %a{:href => "https://github.com/programmingdogw/freemarket_sample_66d", :class => "linkdecoration", target: "_blank"} githubレポジトリのリンク
+              %li.submenu__item
+                %a{:href => "", :class => "linkdecoration"} <span>補足情報 <br><br>ベーシック認証がかけてあります。<br>ユーザー名: admin<br>パスワード: 2222</span>
+        -# %p チーム開発フリマアプリ
+        -# =link_to "デプロイ先(AWS)", "http://18.180.118.52", target: "_blank"
+        -# %br
+        -# ユーザー名: admin
+        -# %br
+        -# パスワード: 2222
+        -# %br
+        -# =link_to "githubのurl(フォーク前)", "https://github.com/irohaas/freemarket_sample_66d", target: "_blank"
+        -# %br
+        -# =link_to "githubのurl(フォーク後)", "https://github.com/programmingdogw/freemarket_sample_66d", target: "_blank"
 
       
       
