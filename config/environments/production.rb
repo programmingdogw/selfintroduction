@@ -94,4 +94,3 @@ Rails.application.configure do
 end
 
 
-config.assets.initialize_on_precompile = false
