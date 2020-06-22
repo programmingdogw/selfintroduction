@@ -200,7 +200,15 @@
       .selfintroduction{
         width: 80%;
         text-align: left;
-        margin:auto; 
+        margin:auto;
+        p{
+          color:gray;
+          border: solid 1px lightskyblue;
+          background-color: linen;
+          padding: 10px;
+          line-height: 24px;
+          margin-top: -10px;
+        } 
       }
 
 
